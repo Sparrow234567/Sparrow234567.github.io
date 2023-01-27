@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+    crossorigin="anonymous"
+  />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+  rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="opening.css" />
+  <html>
+    <head>
+      <title>Loading Page</title>
+      <style>
+        /* Add some styles for the loading page */
+        .loading {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+        }
+
+        body {
+          background-color: pink;
+          mix-blend-mode: multiply;
+        }
+      </style>
+    </head>
+    <body>
+      <div class="loading">
+        <h1>Loading...</h1>
+        <img src="./images/MicrosoftTeams-image (2).png" alt="Loading...">
+      </div>
+      <script>
+        // Add some JavaScript to redirect to the main page after a certain amount of time
+        setTimeout(() => {
+          window.location.href = "index.html";
+        }, 3000); // 3000 milliseconds = 3 seconds
+      </script>
+    </body>
+  </html>
